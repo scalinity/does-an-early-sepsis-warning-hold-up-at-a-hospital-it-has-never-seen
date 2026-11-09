@@ -1,0 +1,22 @@
+/* One US Letter page. 1in = 96 CSS px, so 14px body text prints at 10.5pt. */
+@page {
+  size: letter;
+  margin: 0.32in;
+}
+
+html,
+body {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.sheet {
+  width: 7.86in;
+  margin: 0 auto;
+}
+
+@media screen {
+  .sheet {
+    padding: 0.32in 0;
+  }
+}
